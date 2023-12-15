@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="basic HTML table example">
+        <meta name="keywords" content="HTML, table, example">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="30000">
+    </head>
+    <body>
+        <table bgcolor="black" align="left">
+            <tr bgcolor="green" align="center">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr bgcolor="lightgreen" align="center" width="1050px">
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">9:00 AM to 5:00 PM</td>
+                <td width="150px">Close</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <button onclick="doSomething()" style="background-color: #333333;color: #00FF00;border-radius: 50px;" height="50px" width="100px">click me</button>
+        <p id="test">Hello</p>
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML="lmao"
+            }
+        </script>
+        <form>
+            <div>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass">password:</label>
+                <input type="password" id="pass" name="pass" placeholder="@123$#" required maxlength="12">
+            </div>
+            <br>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required placeholder="SPants@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="phone">phone number:</label>
+                <input type="tel" name="phone" id="phone" maxlength="12" required placeholder="0961511753">
+            </div>
+            <br>
+            <div>
+                <label for="bdate">Birthdate:</label>
+                <input type="date" name="bdate" id="bdate" required>
+            </div>
+            <br>
+            <div>
+                <label for="quantity">quantity:</label>
+                <input type="number" name="quantity" id="quantity" required min="0" max="999" value="1">
+            </div>
+            <br>
+            <div>
+                <label for="title">Title:</label>
+                <label for="Mr.">Mr.</label>
+                <input type="radio" name="title" id="Mr." value="Mr.">
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" name="title" id="Mrs." value="Mrs.">
+                <label for="PhD.">PhD</label>
+                <input type="radio" name="title" id="PhD." value="PhD.">
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment methods:</label>
+                <select name="payment" id="payment" required>
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">Giftcard</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="subscribe">subscribe:</label>
+                <input type="checkbox" name="subscribe" id="subscribe" required>
+            </div>
+            <div>
+                <input type="reset">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+            <br>
+        </form>
+    </body>
+</html>
